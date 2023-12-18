@@ -1,0 +1,118 @@
+*,
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --bg-primary: black;
+    --bg-second: blueviolet;
+    --bg-third: #7e24d2;
+    --txt-primary: #fafafa;
+}
+
+body {
+    background-color: var(--bg-primary);
+}
+
+nav {
+    background-color: var(--bg-second);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  nav a.active {
+    background-color: #7e24d2;
+    color: white;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input[type="text"] {
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    margin-right: 10px;
+  }
+  
+  .search button {
+    padding: 6px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--bg-third);
+    color: white;
+  }
+
+.container-contet1 {
+    color: var(--txt-primary);
+    display: center;
+}
+
+p {
+    font-size: smaller;
+}
+
+.minions {
+    width: 75px;
+    height: 50px;
+}
+
+.container-footer {
+    background-color: var(--bg-second);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 5px;
+}
+
+.h1-footer {
+    color: var(--txt-primary);
+}
+
+.i-footer {
+    color: var(--txt-primary);
+}
+
+@media  screen and (max-width: 746px) {
+    nav{
+        width: auto;
+        height: auto;
+    }
+
+    .container-contet1{
+        font-size: 1.6em;
+    }
+
+
+}
